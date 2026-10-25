@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order your song · Rutvik Studio</title>
+<meta name="description" content="Order a personalised Hindi or English song from Rutvik Studio. Orders open soon.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Rutvik Studio home">
+<img src="logo.svg" width="44" height="44" alt="">
+<span class="brand-name">Rutvik <small>STUDIO</small></span>
+</a>
+<nav class="nav" aria-label="Main">
+<a href="./#songs">Songs</a>
+<a href="./#how">How it works</a>
+<a href="./#faq">FAQ</a>
+</nav>
+</div>
+</header>
+
+<main id="main" class="order">
+<div class="wrap">
+
+<form class="order-form" aria-describedby="soon-note" onsubmit="return false">
+<h1>Order your song</h1>
+<div class="soon" id="soon-note">
+<strong>Orders open soon</strong>
+<p>Here's what we'll ask you. Follow <a href="https://www.instagram.com/rutvikstudiosongs/" style="color: #1E1B3A; font-weight: 600">@rutvikstudiosongs on Instagram</a> to hear the day we open.</p>
+</div>
+
+<fieldset disabled>
+<legend>1. Your song</legend>
+<div class="choice-row">
+<label class="choice"><input type="radio" name="product" value="personal" checked><span><strong>Personal song</strong><br><span>₹999 · $25</span></span></label>
+<label class="choice"><input type="radio" name="product" value="kids"><span><strong>Kids' song video</strong><br><span>₹1,999 · $45</span></span></label>
+<label class="choice"><input type="radio" name="product" value="wedding"><span><strong>Wedding package</strong><br><span>₹4,999 · $99</span></span></label>
+</div>
+<div class="grid-fields">
+<label class="field">Occasion<select name="occasion"><option>Birthday</option><option>Anniversary</option><option>Wedding or sangeet</option><option>Proposal</option><option>Farewell</option><option>Other</option></select></label>
+<label class="field">Language<select name="language"><option>Hindi</option><option>English</option></select></label>
+<label class="field">Mood<select name="mood"><option>Happy and dancy</option><option>Romantic</option><option>Emotional</option><option>Funny</option><option>Devotional</option></select></label>
+<label class="field">Singer's voice<select name="voice"><option>Female</option><option>Male</option><option>Duet</option><option>Children's choir</option></select></label>
+</div>
+</fieldset>
+
+<fieldset disabled>
+<legend>2. Your story</legend>
+<div class="grid-fields">
+<label class="field">Name(s) in the song<input type="text" name="names" placeholder="e.g. the birthday person's name"></label>
+<label class="field">How to say the name(s)<input type="text" name="pronunciation" placeholder="e.g. AA-rav, stress on AA"></label>
+</div>
+<label class="field">Your story<textarea name="story" rows="5" placeholder="Memories, nicknames, inside jokes, what you want them to feel"></textarea></label>
+</fieldset>
+
+<fieldset disabled>
+<legend>3. Delivery</legend>
+<div class="grid-fields">
+<label class="field">Email<input type="email" name="email"></label>
+<label class="field">WhatsApp number<input type="tel" name="whatsapp"></label>
+<label class="field">Country<select name="country"><option>India (pay in ₹)</option><option>Outside India (pay in US$)</option></select></label>
+</div>
+<label class="check"><input type="checkbox" name="express"><span>Express 24-hour delivery (+₹299 / +$10)</span></label>
+</fieldset>
+
+<fieldset disabled>
+<legend>4. Please confirm</legend>
+<label class="check"><input type="checkbox" name="ai"><span>I understand the song is made with AI.</span></label>
+<label class="check"><input type="checkbox" name="licence"><span>I agree to the <a href="legal.html#licence">personal-use licence</a> and <a href="legal.html#terms">terms of sale</a>.</span></label>
+<label class="check"><input type="checkbox" name="parent"><span>If the song is about a child, I am their parent or guardian and consent to sharing their name for this song.</span></label>
+<label class="check"><input type="checkbox" name="marketing"><span>Optional: Rutvik Studio may share my song as a sample on its social media.</span></label>
+</fieldset>
+</form>
+
+<aside class="summary" aria-label="Order summary">
+<h2>Your order</h2>
+<div class="row"><span>Personal song + lyric video</span><strong>₹999</strong></div>
+<div class="row muted"><span>Delivery</span><span>48 hours</span></div>
+<hr>
+<div class="row total"><span>Total</span><span>₹999</span></div>
+<span class="btn btn-gold" aria-disabled="true" style="text-align: center">Orders open soon</span>
+<p class="muted" style="font-size: 15px">Payments will be handled securely by Razorpay: UPI, cards and netbanking in India, international cards abroad.</p>
+</aside>
+
+</div>
+</main>
+
+<footer class="site-footer">
+<div class="wrap">
+<div>
+<p class="display">Rutvik Studio</p>
+<p lang="hi">आपकी कहानी, आपका गाना</p>
+</div>
+<nav aria-label="Legal">
+<a href="legal.html#terms">Terms of sale</a>
+<a href="legal.html#licence">Song licence</a>
+<a href="legal.html#privacy">Privacy policy</a>
+<a href="legal.html#refunds">Refund policy</a>
+<a href="legal.html#contact">Contact</a>
+</nav>
+<p style="width: 100%; font-size: 14px">© 2026 Rutvik Studio</p>
+</div>
+</footer>
+</body>
+</html>
