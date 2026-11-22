@@ -29,13 +29,11 @@
 <a href="#webseries">Web Series</a>
 <a href="#songs">Custom Songs</a>
 <a href="#faq">FAQ</a>
-<div class="nav-dropdown">
-<button class="btn btn-primary nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Order now <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 5l3 3 3-3"/></svg></button>
-<div class="nav-dropdown-menu">
-<a href="order.html">🎵 Order a Song</a>
-<a href="#webseries">🎬 Order Web Series</a>
-</div>
-</div>
+<select class="btn btn-primary nav-select" onchange="if(this.value){window.location.href=this.value;this.selectedIndex=0;}">
+<option value="" selected disabled>Order now ▾</option>
+<option value="order.html">🎵 Order a Song</option>
+<option value="#webseries">🎬 Order Web Series</option>
+</select>
 </nav>
 </div>
 </header>
@@ -223,17 +221,5 @@
 <p style="width: 100%; font-size: 14px">© 2026 Rutvik Studio</p>
 </div>
 </footer>
-<script>
-document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.stopPropagation();
-    const expanded = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', !expanded);
-  });
-});
-document.addEventListener('click', () => {
-  document.querySelectorAll('.nav-dropdown-toggle').forEach(b => b.setAttribute('aria-expanded', 'false'));
-});
-</script>
 </body>
   </html>
