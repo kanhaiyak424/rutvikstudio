@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rutvik Studio · Original Hindi Music | AI Web Series | Brand Content</title>
-<meta name="description" content="Rutvik Studio — India's AI-powered music and entertainment label. Original Hindi songs, cinematic AI web series, microdramas, brand films, and personalised songs. From ₹999.">
+<meta name="description" content="Rutvik Studio — India’s AI-powered music and entertainment label. Original Hindi songs, cinematic AI web series, microdramas, brand films, and personalised songs. From ₹999.">
 <meta property="og:title" content="Rutvik Studio · Original Hindi Music | AI Web Series | Brand Content">
 <meta property="og:description" content="Original Hindi music, cinematic AI web series, and personalised songs made with AI.">
 <meta property="og:type" content="website">
@@ -29,7 +29,13 @@
 <a href="#webseries">Web Series</a>
 <a href="#songs">Custom Songs</a>
 <a href="#faq">FAQ</a>
-<a class="btn btn-primary" href="order.html">Order a song</a>
+<div class="nav-dropdown">
+<button class="btn btn-primary nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Order now <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 5l3 3 3-3"/></svg></button>
+<div class="nav-dropdown-menu">
+<a href="order.html">🎵 Order a Song</a>
+<a href="#webseries">🎬 Order Web Series</a>
+</div>
+</div>
 </nav>
 </div>
 </header>
@@ -40,7 +46,7 @@
 <div class="wrap">
 <div class="hero-text">
 <p class="hero-tag" lang="hi">Original Hindi Music · AI Web Series · Brand Content</p>
-<h1>India's AI-powered music and entertainment label</h1>
+<h1>India’s AI-powered music and entertainment label</h1>
 <p class="lead">Original Hindi songs, cinematic AI web series, microdramas, and brand films — produced with cutting-edge AI tools and professional human direction.</p>
 <div class="hero-actions">
 <a class="btn btn-primary" href="https://www.youtube.com/@rutvikstudiosongs">Watch on YouTube</a>
@@ -75,18 +81,18 @@
 </div>
 <div class="cards">
 <article class="card">
-<h3>Safar Series</h3>
+<h3>🎵 Safar Series</h3>
 <p>A cinematic travel romance series — each episode is an original Hindi song set in a different destination, from Goa to Andaman to Israel.</p>
 <a class="btn btn-primary" href="https://www.youtube.com/@rutvikstudiosongs">Watch on YouTube</a>
 </article>
 <article class="card card-dark">
 <p class="badge">Coming Soon</p>
-<h3>AI Web Series</h3>
+<h3>🎬 AI Web Series</h3>
 <p>Story-driven Hindi microdramas with AI-generated visuals, professional voice acting, and original background scores. Romance, thriller, and more.</p>
 <a class="btn btn-gold" href="#webseries">Learn more</a>
 </article>
 <article class="card">
-<h3>Bhakti Series</h3>
+<h3>🙏 Bhakti Series</h3>
 <p>Hindi devotional songs and bhajans — Hanuman, Shiv, Krishna, Ram, and morning aartis with meditative visuals. New songs every Wednesday and Sunday.</p>
 <a class="btn btn-primary" href="https://www.youtube.com/@rutvikstudiosongs">Listen now</a>
 </article>
@@ -109,7 +115,7 @@
 <article class="card card-dark">
 <h3>Full Series</h3>
 <p>8–12 episode series with consistent characters, intro/outro branding, and two revision rounds per episode. Delivered in 2–3 weeks.</p>
-<p class="price">from ₹15,000 <span>per episode</span></p>
+<p class="price">from ₹20,000 <span>per episode</span></p>
 </article>
 <article class="card">
 <h3>Brand Films</h3>
@@ -217,5 +223,17 @@
 <p style="width: 100%; font-size: 14px">© 2026 Rutvik Studio</p>
 </div>
 </footer>
+<script>
+document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', !expanded);
+  });
+});
+document.addEventListener('click', () => {
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(b => b.setAttribute('aria-expanded', 'false'));
+});
+</script>
 </body>
-</html>
+  </html>
